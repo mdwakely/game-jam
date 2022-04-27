@@ -25,7 +25,15 @@ public class PlayerRaycast : MonoBehaviour
         RaycastHit hitObject;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hitObject, castDistance))
         {
-            hitObject.transform.gameObject.GetComponent<Switch>()
+            foreach(ObjectMessagePair pair in objects)
+            {
+                if(pair.foundObject == hitObject.transform.gameObject)
+                {
+                    Fungus.Flowchart.BroadcastFungusMessage(pair.message);
+                    break;
+                }
+            }
+            
         }
     }
 }
