@@ -6,6 +6,8 @@ public class PlayerRaycast : MonoBehaviour
 {
     public List<ObjectMessagePair> objects;
 
+    public float castDistance = 3;
+
     void Start()
     {
         
@@ -15,5 +17,15 @@ public class PlayerRaycast : MonoBehaviour
     void Update()
     {
         
+    }
+    private void UpdateRaycast()
+    {
+
+        // update raycasy
+        RaycastHit hitObject;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hitObject, castDistance))
+        {
+            hitObject.transform.gameObject.GetComponent<Switch>()
+        }
     }
 }
