@@ -507,7 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Trev
   nameColor: {r: 0.11454255, g: 0.11567279, b: 0.6226415, a: 1}
-  soundEffect: {fileID: 8300000, guid: d64bcc814caf23c41ba706c2d4f06724, type: 3}
+  soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 0}
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 81.47326, y: 288.88022}
+  scrollPos: {x: 140.69725, y: 264.1866}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
